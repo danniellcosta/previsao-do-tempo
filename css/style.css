@@ -1,0 +1,79 @@
+:root{
+    --cor-primaria: #131B5D;
+    --cor-secundaria: #6971C3;
+}
+
+
+html, body {
+    height: 100%;                  /* Garante que a página ocupe 100% da altura da tela */
+    margin: 0;                     /* Remove as margens padrão */
+    display: flex;                 /* Define o body como flexbox */
+    justify-content: center;       /* Centraliza o conteúdo horizontalmente */
+    align-items: center;           /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;        /* Alinha os elementos em uma coluna */
+    background-color: var(--cor-primaria);     /* Cor de fundo para o layout */
+}
+
+.container {
+    text-align: center;            /* Centraliza o texto dentro da div */
+    margin-bottom: 20px;           /* Espaço entre o título e o card */
+}
+
+h1 {
+    margin-bottom: 15px;           /* Adiciona espaço entre o título e o card */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;        /* Alinha os elementos do card em coluna */
+    justify-content: center;       /* Centraliza o conteúdo do card horizontalmente */
+    align-items: center;           /* Centraliza o conteúdo do card verticalmente */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao card */
+    background-color: var(--cor-primaria);  
+    color: #fff;      /* Define cor de fundo para o card */
+}
+
+.card-body {
+    text-align: center;            /* Centraliza o conteúdo do card-body */
+}
+
+.card-img {
+    width: 100px;                  /* Tamanho da imagem dentro do card */
+    height: 100px;                 /* Tamanho da imagem dentro do card */
+    margin-bottom: 15px;           /* Espaço abaixo da imagem */
+}
+
+.list {
+    list-style-type: none;         /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 20px 0;                /* Margem entre a lista e o resto do conteúdo */
+}
+
+.card-btn {
+    margin: 5px;                   /* Espaço entre os botões */
+}
+
+.header{
+    width: 450px;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 5px ;
+}
+
+.local-btn{
+    margin-left: 120px;
+    margin-top: 30px;
+    width: 50%;
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
